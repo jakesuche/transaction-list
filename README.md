@@ -34,3 +34,44 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Transaction Dashboard
+
+This project is a transaction history dashboard with features like sorting, filtering, and pagination.
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open http://localhost:3000 in your browser
+
+## Running Tests
+
+- To run unit tests: `npm run test`
+- To run end-to-end tests:
+  1. Start the development server: `npm run dev`
+  2. In a new terminal, run: `npm run test:e2e`
+
+## Login Credentials
+
+- Email: user@example.com
+- Password: password
+
+## Features
+
+- Login page with JWT token authentication
+- Protected dashboard routes
+- Transaction list with sorting, filtering, and pagination
+- Transaction detail page
+- CSV export functionality
+- Responsive design
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- React
+- Zustand for state management
+- Tailwind CSS for styling
+
+
