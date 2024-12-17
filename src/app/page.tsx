@@ -11,7 +11,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const router = useRouter();
-  const { toast } = useToast();
+  const { showToast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,12 +19,10 @@ export default function LoginPage() {
       const token = await loginUser(email, password);
       localStorage.setItem("token", token);
       router.push("/dashboard");
+       showToast("Login Successful.", 'success');
     } catch (error) {
-      toast({
-        title: "Login failed",
-        description: "Please check your credentials and try again.",
-        variant: "destructive",
-      });
+      console.log(error)
+      showToast(`Please check your credentials and try again.`, 'error',);
     }
   };
 
